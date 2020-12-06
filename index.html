@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <title>Login & Signup</title>
+  </head>
+  <body>
+    <section class="mainSection py-4">
+      <div class="container">
+        <div class="row my-5" style="padding: 30px 29px;">
+          <div class="col-md-1 col-12 col-sm-12"></div>
+          <div
+            class="col-md-6 col-12 col-sm-12 text-center py-2"
+            id="half_width"
+          >
+            <img class="avatar" src="./images/avatar.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem earum praesentium perspiciatis. Possimus ipsum
+              voluptate ipsam eligendi fugit, consequuntur esse.
+            </p>
+          </div>
+          <div
+            class="col-md-4 col-12 col-sm-12 text-center py-2"
+            id="secondHalf_width"
+          >
+            <h3>Welcome</h3>
+            <h5>User Login</h5>
+
+            <form action="" id="formAction">
+              <input
+                id="firstInput"
+                class="mt-1 form-control"
+                name="nameEmail"
+                type="text"
+                placeholder="Email or Username"
+                required
+              />
+              <input
+                id="secondInput"
+                class="my-3 form-control"
+                name="pass"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <div id="showExpression"></div>
+
+              <p class="forgotStyle py-2">Forgot Password</p>
+
+              <button class="btn btn-primary btn-block mb-3" id="loginBtn">
+                LOG IN
+              </button>
+            </form>
+            <p class="forgotStyle pt-2 pb-3" id="createAccount">
+              Sign Up
+            </p>
+          </div>
+          <div class="col-md-1 col-12 col-sm-12"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- for creater Account Section -->
+    <section class="signUpSection py-4 animated bounceInLeft">
+      <div class="container">
+        <div class="row my-4" style="padding:5px" >
+          <div class="col-md-1 col-12 col-sm-12"></div>
+          <div
+            class="col-md-4 col-12 col-sm-12 text-center py-2"
+            id="half_widthSignup"
+          >
+            <img class="avatar2" src="./images/ava.png" alt="" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+              reiciendis ratione eveniet ad illum, tempora inventore deleniti
+              impedit laborum debitis itaque vel voluptatibus quibusdam ipsam.
+              Atque nesciunt ea fuga quo veritatis accusamus dolore sapiente
+              totam rerum molestias, debitis nihil dolores libero deleniti,
+              reprehenderit, voluptates amet. Aut repudiandae minima aperiam
+              quaerat.
+            </p>
+          </div>
+          <div
+            class="col-md-6 col-12 col-sm-12 text-center py-2"
+            id="secondHalf_width2"
+          >
+            <h3>Sign Up Form</h3>
+            <h5>User Details</h5>
+
+            <form action="" id="signUpForm">
+
+
+              <label class="text-left firstName animated fadeInUp"
+                >firstname:
+              </label>
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="firstName"
+                placeholder="firstname"
+                name='first'
+                required
+              />
+              <label class="text-left lastName animated fadeInUp"
+                >lastname:
+              </label>
+              <input
+                id="lastName"
+                type="text"
+                class="form-control mb-2"
+                placeholder="lastname"
+                name='last'
+              />
+
+              <label class="float-left email animated fadeInUp">email: </label>
+              <input
+                id="email"
+                type="email"
+                class="form-control mb-2"
+                placeholder="email"
+                name="email"
+              />
+
+              <label class="text-left pass animated fadeInUp">password: </label>
+              <input
+                id="password"
+                type="password"
+                class="form-control mb-2"
+                placeholder="password must be 8 character"
+                name="pass"
+                required
+              />
+
+              <label class="float-left" for="">upzilla: </label>
+              <label for="">zilla: </label>
+              <div class="d-flex mb-2">
+                <select name="" id="" class="form-control mr-2">
+                  <option value="">Sariakandi</option>
+                  <option value="">check</option>
+                  <option value="">etc.</option>
+                </select>
+                <select name="" id="" class="form-control">
+                  <option value="">Bogura</option>
+                  <option value="">V</option>
+                  <option value="">X</option>
+                </select>
+              </div>
+
+              <label class="float-left" for="">gender: </label>
+              <label for="" class="ml-4">post code: </label>
+              <div class="d-flex">
+                <select name="" id="" class="form-control">
+                  <option value="">Male</option>
+                  <option value="">female</option>
+                </select>
+
+                <input
+                  type="text"
+                  class="form-control ml-2"
+                  placeholder="post code "
+                  required
+                />
+              </div>
+
+              <div id="showError" class="mt-2"></div>
+
+              <button class="btn btn-primary btn-block my-3" id="loginBtn">
+                Sign Up
+              </button>
+            </form>
+          </div>
+          <div class="col-md-1 col-12 col-sm-12"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./code.js"></script>
+  </body>
+</html>
